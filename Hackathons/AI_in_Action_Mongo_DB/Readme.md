@@ -1,3 +1,7 @@
+Link to Preview for Free: https://colab.research.google.com/drive/1HfPEl8evpDPRPdXuTOyv_nH-1SmzNwdF?usp=sharing
+![image](https://github.com/user-attachments/assets/aad6a1cf-c8cf-448f-a22e-2e01b5145072)
+
+
 ## Inspiration
 I am a professional Data Scientist and wanted to test out creating a custom NL to SQL Agent that could integrate with MongoDB through PyMongo as I was scouring the blogs and seeing that it was not something that was readily available. Instead there were pages and pages on RAG and vector search, so I thought why not have something simple that an analyst or low code tool user could readily access to get answers about data instead of spending hours waiting for an email response from a Data Scientist (yes, I am guilty of long response times 😛 ).
 
