@@ -1,6 +1,18 @@
 Link to Preview for Free: https://colab.research.google.com/drive/1HfPEl8evpDPRPdXuTOyv_nH-1SmzNwdF?usp=sharing
+Link to Cloud Run Deployment (only live until 6/20/2025): https://mesop-pymongo-agent-602402744184.us-central1.run.app/
 ![image](https://github.com/user-attachments/assets/aad6a1cf-c8cf-448f-a22e-2e01b5145072)
 
+**How to deploy on cloud**
+ In Cloud Shell, execute the following command after correctly populating your *.env* file:
+
+   ```bash
+   gcloud run deploy $SERVICE_NAME \
+      --source . \
+      --port=8080 --allow-unauthenticated \
+      --project=$GOOGLE_CLOUD_PROJECT --region=$GOOGLE_CLOUD_REGION \
+      --set-env-vars=GOOGLE_CLOUD_PROJECT=$GOOGLE_CLOUD_PROJECT \
+      --set-env-vars=GOOGLE_CLOUD_REGION=$GOOGLE_CLOUD_REGION
+   ```
 
 ## Inspiration
 I am a professional Data Scientist and wanted to test out creating a custom NL to SQL Agent that could integrate with MongoDB through PyMongo as I was scouring the blogs and seeing that it was not something that was readily available. Instead there were pages and pages on RAG and vector search, so I thought why not have something simple that an analyst or low code tool user could readily access to get answers about data instead of spending hours waiting for an email response from a Data Scientist (yes, I am guilty of long response times 😛 ).
