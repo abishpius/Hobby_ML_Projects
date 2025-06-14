@@ -534,7 +534,7 @@ def transform(input: str):
 
   @tool
   def execute_query(collection_name: str, query: Dict = {}, projection: Dict = None) -> List[Dict]:
-      """Execute a MongoDB query, save results to CSV that is accessible in the environment called data.csv. Returns the first 5 rows of the result as a DataFrame.
+      """Execute a MongoDB query, save results to CSV that is accessible in the environment called data.csv.
 
       Args:
           collection_name: Name of the collection to query.
